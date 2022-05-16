@@ -1,3 +1,93 @@
 h1 {
     color: blue;
 }
+
+
+
+/* <div class="dice-game-box">
+        <h2 id="player-turn"> Player's turn </h2>
+        <div class="tabel-players">
+
+            <div class="tabel-col">
+                <h4 class="score-p" id="score-player1"> Score : 0</h4>
+                <p class="result-box" id="result-player1"> - </p>
+            </div>
+
+            <div class="tabel-col">
+                <h4 class="score-p" id="score-player2"> Score : 0</h4>
+                <p class="result-box" id="result-player2"> - </p>
+            </div>
+        </div>
+
+        <button id="btn-roll"> Roll dice <span id="dice-icon"> <i class="fa-solid fa-dice"></i> </span> </button>
+    </div> */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.dice-game-box {
+    max-width: 600px;
+    border: 1px solid black;
+    box-shadow: 0px 4px 15px 3px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto ;
+    margin-top: 150px;
+    padding: 50px 20px;
+    background-color: whitesmoke;
+}
+
+
+.tabel-players {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.tabel-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: 40%;
+    margin: 40px 0px;
+}
+
+.score-p {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.result-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #f3cae3;
+    font-size: 28px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+.shadow-box {
+    box-shadow: 0px 8px 15px 1px black;
+}
+
+#btn-roll {
+    background-color: #fe9cd7;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px ;
+    padding: 10px 30px;   
+}
